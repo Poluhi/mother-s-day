@@ -1,0 +1,83 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/fon-zastavka-na-den-materi-krasivo.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    font-family: 'Lobster', sans-serif;
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.6);
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade 3s forwards;
+    animation: text-fade 3s forwards;
+}
+
+
+.img {
+    animation: traslete 2s forwards;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    color: goldenrod;
+    animation: text-color 3s infinite alternate;
+
+}
+
+.poem {
+    font-size: 30px;
+    color: darkgoldenrod;
+}
+
+@keyframes fade {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@keyframes text-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-color {
+    0% {
+        color: goldenrod;
+    }
+
+    50% {
+        color: gold;
+
+    }
+
+    100% {
+        color: darkgoldenrod;
+    }
+}
+
+@keyframes traslete {
+    0% {
+        transform: translateX(-100w)
+    }
+}
